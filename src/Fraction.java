@@ -1,17 +1,32 @@
 public class Fraction {
-    private int numerateur;
-    private int denominateur;
 
-    // Constructeur
-    public Fraction(int numerateur, int denominateur) {
-        this.numerateur = numerateur;
-        this.denominateur = denominateur;
+    private int numerateurQ;
+    private int denominateurU;
+
+    public Fraction(int numerateurQ, int denominateurU) {
+        this.numerateurQ = numerateurQ;
+        this.denominateurU = denominateurU;
+    }
+
+    public int getNumerateurQ() {
+        return numeratorQ;
+    }
+
+    public int getDenominateurU() {
+        return denominateurU;
     }
 
 
+    @Override
+    public String toString() {
+        return numerateurQ + "/" + denominateurU;
+    }
 
-    // Méthode toString
     public String toString() {
         return "Je suis une fraction.";
     }
 }
+
+}
+
+
