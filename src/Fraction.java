@@ -7,6 +7,14 @@ public class Fraction {
         this.numerateurQ = numerateurQ;
         this.denominateurU = denominateurU;
     }
+    public Fraction(int numerateurQ) {
+        this.numerateurQ=numerateurQ;
+        denominateurU=1;
+    }
+    public Fraction (){
+        numerateurQ=0;
+        denominateurU=1;
+    }
 
     public int getNumerateurQ() {
         return numerateurQ;
@@ -22,11 +30,6 @@ public class Fraction {
         return numerateurQ + "/" + denominateurU;
     }
 
-    public String toString() {
-        return "Je suis une fraction.";
-    }
+    public static final Fraction Zero = new Fraction();
+    public static final Fraction UN = new Fraction(1);
 }
-
-}
-
-
