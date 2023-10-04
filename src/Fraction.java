@@ -9,7 +9,7 @@ public class Fraction {
     }
 
     public int getNumerateurQ() {
-        return numeratorQ;
+        return numerateurQ;
     }
 
     public int getDenominateurU() {
